@@ -5,7 +5,7 @@ These files are required to load the pre-trained similarity matrix and movie dat
 
 ## 📂 Files Included
 - `similarity.pkl` → Stores the similarity matrix used to recommend the top 5 similar movies.  
-- `movies.pkl` → Contains the processed movie data used for recommendations.  
+- `movies_dict.pkl` → Contains the processed movie data used for recommendations.  
 - *(Other `.pkl` files as needed)*  
 
 ## 📥 Download Model Files
@@ -23,4 +23,4 @@ import pickle
 similarity = pickle.load(open("similarity.pkl", "rb"))
 
 # Load movie data
-movies = pickle.load(open("movies.pkl", "rb"))
+movies_dict = pickle.load(open("movies_dict.pkl", "rb"))
